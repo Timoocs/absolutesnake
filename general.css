@@ -10,3 +10,11 @@ canvas{
     background: rgb(255, 189, 24);
     border: 15px solid rgb(255, 0, 43);
 }
+article{
+    display: flex;
+    color: white;
+    gap: 6rem;
+}
+div{
+    font-size: 5rem;
+}

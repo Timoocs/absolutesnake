@@ -141,7 +141,39 @@ function moveStuff() {
 //random food poss
 
 
-       
+       //mobile
+       function rightArrow(){
+        if ( velocityX!== -1){
+            velocityX = 1;
+            velocityY = 0;
+            }
+           
+       }
+       function upArrow(){
+        if ( velocityY !== 1){
+            velocityX = 0;
+            velocityY = -1;
+            
+            }
+           
+       }
+     
+       function downArrow(){
+        if ( velocityY !== -1){
+            velocityX = 0;
+            velocityY = 1;
+            }
+           
+       }
+     
+       function leftArrow(){
+        if ( velocityX !== 1){
+            velocityX = -1;
+        velocityY = 0;
+            }
+           
+       }
+     
      
 
 /**
@@ -153,6 +185,7 @@ function keyPush(event){
         if ( velocityY !== 1){
         velocityX = 0;
         velocityY = -1;
+        upArrow();
         }
       
         break;
